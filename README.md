@@ -38,6 +38,8 @@ Building Smart Contract demos using Solidity and Foundry.
 
 3. Create and run demo 
     ```bash
+    mkdir -p /app/var
+    cd /app/var
     forge init my_project
     cd my_project
     forge test -vvv
@@ -47,3 +49,17 @@ Building Smart Contract demos using Solidity and Foundry.
     ```bash
     anvil --host 0.0.0.0
     ```
+
+ ## Create applicaton
+
+ 1. Create project
+    ```bash
+    mkdir -p /app/project
+    cd /app/project
+    forge init my_dapp
+    cd my_dapp
+    ```
+
+2. Edit contract file src/Counter.sol
+
+3. Edit test file test/Counter.t.sol
