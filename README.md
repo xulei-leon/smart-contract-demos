@@ -60,6 +60,24 @@ Building Smart Contract demos using Solidity and Foundry.
     cd my_dapp
     ```
 
+    Update git submodules.
+    ```bash
+    git submodule update --init --recursive
+    ```
+
+    Ignore files modes in Windows environments.
+    ```bash
+    git config core.filemode false
+    ```
+
 2. Edit contract file src/Counter.sol
 
 3. Edit test file test/Counter.t.sol
+
+4. Run test
+    ```bash
+    forge test
+    forge test -vvv
+    forge test --gas-report
+    forge test --fuzz-runs 1000
+    ```
